@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 30;
+         var b = 22;
+         var c = a+b;
+         var a = 2;  // var can be decleared again.
+        //  document.write(c);
+         </script>
+
+         <!--Variable work as a global scope  -->
+         <script>
+            {
+                var x = 110;
+            }
+            document.write(x); //working
+         </script>
+
+            <!--Let work as a block scope  -->
+            <script>
+                {
+                    let y = 10;
+                }
+                document.write(y); // Not working
+             </script>
+
+
+</body>
+</html>

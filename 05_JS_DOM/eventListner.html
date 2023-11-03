@@ -1,0 +1,117 @@
+<!-- <button id="myBtn">Function_second_Method--3</button>
+<p id="demo_04"></p>
+<script>
+    
+    document.getElementById("myBtn").addEventListener("click", DisplayDate_01); //here onclock element
+    //is assign to myBtn then 
+    // myBtn cll to button id= myBtn.
+
+   function DisplayDate_01 (){
+    document.getElementById("demo_04").innerHTML=Date();
+   }
+</script>
+ -->
+
+
+
+<!-- Add Alert element to existing example. -->
+<!-- <button id="myBtn">Function_second_Method</button>
+<p id="demo_05"></p>
+<script>
+    
+    document.getElementById("myBtn").addEventListener("click", DisplayDate_01, alert("Hello Alert") ); //here onclock element
+    //is assign to myBtn then 
+    // myBtn cll to button id= myBtn.
+
+   function DisplayDate_01 (){
+    document.getElementById("demo_05").innerHTML=Date();
+   }
+</script>
+ -->
+
+
+
+<!-- You can also refer to an external "named" function: -->
+<!-- <button id="myBtn">Function_second_Method</button>
+<p id="demo_05"></p>
+<script>
+    
+    document.getElementById("myBtn").addEventListener("click", DisplayDate_01); //here onclock element
+    //is assign to myBtn then 
+    // myBtn cll to button id= myBtn.
+
+   function DisplayDate_01 (){
+   alert("Hello Alert inner")
+   }
+</script> -->
+
+
+
+
+<!-- Add Many Event Handlers to the Same Element or button -->
+<!-- here we have added two click element to only one button -->
+<!-- <button id="myBtn">Function_second_Method</button>
+<p id="demo_05"></p>
+<script>
+    
+    x = document.getElementById("myBtn");
+    x.addEventListener("click", DisplayDate_01);
+    x.addEventListener("click", DisplayDate_02);
+    
+   function DisplayDate_01 (){
+   alert("Hello Alert_01 inner")
+   }
+   function DisplayDate_02 (){
+   alert("Hello Alert_02 inner")
+   }
+</script>
+
+ -->
+
+
+
+
+ <!-- You can add events of different types to the same element -->
+<button id="myBtn">Mouseover method</button>
+<p id="demo_03"></p>
+<script>
+    
+    x = document.getElementById("myBtn");
+    x.addEventListener("mouseover", DisplayDate_01);
+    x.addEventListener("click", DisplayDate_02);
+    x.addEventListener("mouseout", DisplayDate_03);
+    
+   function DisplayDate_01 (){
+    document.getElementById('demo_03').innerHTML += "Mouse over! <br>"; //we have used += to add 
+    //events like mouseover if we take  =  then then value will not be counted.
+   }
+   function DisplayDate_02 (){
+    document.getElementById('demo_03').innerHTML  += "Clicked! <br>";
+   }
+   function DisplayDate_03 (){
+    document.getElementById('demo_03').innerHTML += "Mouse out! <br>";
+   }
+</script>
+
+
+
+
+
+
+<!-- Resize event -->
+<button id="DisplayDate_01">Resize event</button>
+<p id="demo_03"></p>
+<script>
+    window.addEventListener("resize", DisplayDate_01); // the window keyword we used instead of
+    // document.getElementById("myBtn") becouse here we can call to window to resise the box.
+
+
+// // second mehod to cll the function 
+//     window.addEventListener("resize", DisplayDate_01(){
+//   document.getElementById("demo").innerHTML = Math.random();
+// });
+
+   function DisplayDate_01 (){
+    document.getElementById('demo_03').innerHTML = Math.random();
+   }
+</script>

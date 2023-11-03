@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Good evening</p>
+    <script>
+        const hour = new Date().getHours(); //new Date().getHours(); shows the today's date
+        // if new key word with date shows today's date. if we remore new key word or Date() 
+        //then it will not ne worked;
+        let greeting;
+        if (hour > 18 ) {
+            greeting = "good day!";
+        }
+        else{
+            greeting = "good evening!";
+        }
+        document.getElementById("demo").innerHTML = greeting ;
+        document.write(new Date().getHours  ());
+    </script>   
+</body>
+</html>

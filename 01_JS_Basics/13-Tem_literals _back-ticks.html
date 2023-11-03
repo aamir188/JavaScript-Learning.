@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+let text = `Hello world!`; // back ticks is actually working as a string 
+document.getElementById("demo").innerHTML = text;
+
+</script>
+
+
+
+
+
+<p id="demo_01"></p>
+<script>
+
+let text_01 = `He's often called "Johnny"`; //we can use double quotes
+// with in back ticks strings.
+document.getElementById("demo_01").innerHTML = text_01;
+</script>
+
+
+
+
+<p id="demo_02"></p>
+<script>
+
+    let text_02 =
+`The quick
+brown fox
+jumps over
+the lazy dog`;// //back ticks is used for multiple
+// line string but single or double quotations string is not working.
+document.getElementById("demo_02").innerHTML = text_02;
+</script>
+
+
+
+<!-- string interpolation. -->
+<p id="demo_03"></p>
+<script>
+    let firstName = "John";
+let lastName = "Doe";
+// let var = `Wellcome ${firstName}, ${lastName}`; //templete literial 
+//allow variable to access in string. 
+//Automatic replacing of variables with real values is called string interpolation.
+document.getElementById("demo_03").innerHTML = text;
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onclick with time -->
+
+
+
+    <!-- onclick data Display with p tag. -->
+
+    <h1 onclick="document.getElementById('demo_02').innerHTML ='opps_02'">Click on this text</h1>
+    <p id="demo_02"></p>
+
+
+
+    
+    <p id="demo"></p>
+    <!-- here the innerHTML=Date() is to be assign to the  getElementById('demo') then the demo 
+    element is call to p tag to store that value. -->
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The Time is:</button>
+    
+
+
+
+
+
+
+    <!-- here the innerHTM save the date its own butto_tag. -->
+    <button onclick="innerHTML=Date()">The Time is_second:</button>
+
+
+
+
+
+
+
+
+
+    <!-- onclick with function -->
+    <button onclick="DisplayDate ()">Function</button>
+    <script>
+   
+       function DisplayDate ()
+       {
+        document.getElementById('demo_03').innerHTML=Date();
+       }
+   </script>
+   <p id="demo_03"></p>
+
+
+
+
+   
+    <!-- onclick with function_second method -->
+    <!-- Assign an onclick event to a button element: -->
+    <!-- here we can assign even to an html element to button. -->
+    <button id="myBtn">Function_second_Method</button>
+    <p id="demo_04"></p>
+    <script>
+        
+        document.getElementById("myBtn").onclick= DisplayDate_01(); //here onclock element is assign to myBtn then 
+        // myBtn cll to button id= myBtn.
+
+       function DisplayDate_01 (){
+        document.getElementById("demo_04").innerHTML=Date();
+       }
+   </script>
+</body>
+</html>

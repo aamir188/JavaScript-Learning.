@@ -1,0 +1,52 @@
+<style>
+    #myDiv1, #myDiv2 {
+        background-color: coral;
+        padding: 50px;
+    }
+    #myP1, #myP2{
+        background-color: white;
+        border: 1px solid;
+        font-size: 20px;    
+        padding: 20px;
+    }
+</style>
+<div id="myDiv1">
+    <h1>Bubbling</h1>
+    <p id="myP1">Click</p>
+</div><br>
+
+<div id="myDiv2">
+    <h1>Capturing</h1>
+    <p id="myP2">Click</p>
+</div>
+<p id="demo_03"></p>
+<script>
+    document.getElementById('myP1').addEventListener("click", DisplayDate_01, false);
+
+   function DisplayDate_01 (){
+    alert("you click the white element");
+   }
+
+   document.getElementById('myDiv1').addEventListener("click",DisplayDate_02, false);
+   function DisplayDate_02 (){
+    alert("You clicked the orange element!");
+   }
+
+
+
+
+   document.getElementById('myP2').addEventListener("click", DisplayDate_01,true);
+
+function DisplayDate_01 (){
+ alert("you click the white element");
+}
+
+
+
+
+document.getElementById('myDiv2').addEventListener("click",DisplayDate_02,true);
+function DisplayDate_02 (){
+ alert("You clicked the orange element!");
+}
+
+</script>

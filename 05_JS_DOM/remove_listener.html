@@ -1,0 +1,28 @@
+<style>
+  #myDiv1 {
+  background-color: coral;
+  border: 1px solid;
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+    }
+</style>
+<div id="myDiv1">
+    <p>This div element has an onmousemove event handler that displays
+         a random number every time you move your mouse inside this orange field.</p>
+    <p>Click the button to remove the div's event handler.</p>
+    <button onclick="removeHandler()"  id="myBtn">Remove</button>
+</div>
+<p id="demo"></p>
+
+<script>
+   document.getElementById("myDiv1").addEventListener("mousemove", DisplayDate_01);
+
+   function DisplayDate_01 (){
+    document.getElementById("demo").innerHTML = Math.random();
+
+   }
+   function removeHandler (){
+    document.getElementById("myDiv1").removeEventListener ("mousemove", DisplayDate_01);
+   }
+</script>

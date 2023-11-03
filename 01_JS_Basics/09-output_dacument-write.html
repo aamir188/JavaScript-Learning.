@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.</p>
+
+<script>
+var value_1 = 10;;
+var value_2 = 20;;
+var addition = value_1+ value_2;
+document.write(addition); //dacument.write is not access outside from script tab.
+</script><br>
+
+<!-- Using document.write() after an HTML document is loaded, will delete all existing HTML:-->
+<button type="button" onclick="document.write(44+6)">Try it</button>
+<button type="button" id="aamir" onclick="document.getElementById('aamir').innerHTML = 3+2 ">Try it</button>
+    <button type="button" onclick="window.alert(200+50)">Try it</button>
+<!-- All of output are working same on the button -->
+</body>
+</html> 
