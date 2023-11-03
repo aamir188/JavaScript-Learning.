@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 4%;
+
+}
+.form{
+   
+width: 23%;
+}
+.form input{
+    font-size: 17px;
+    width: 73%;
+    padding: 4px;
+}
+.button{
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid;
+    margin-left: 50px;
+    width: 100px;
+    margin-top: 24px;
+}
+#removeid{
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid;
+    margin-left: 50px;
+    width: 100px;
+    margin-top: 24px;
+}

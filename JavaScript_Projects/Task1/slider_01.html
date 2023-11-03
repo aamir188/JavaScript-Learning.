@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider_01</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <main class="main">
+        <img src="img.jpg"  id="slide" alt="The Woods">   
+     
+        <div class="nav">
+            <a class="prev" onclick="goPrev();">❮</a>
+            <a class="next" onclick="goNext();">❯</a>
+        </div>
+        <div class="caption-container">
+            <p id="caption">Caption</p>
+          </div>
+
+    </main>
+    <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="img.jpg" style="width:100%" onclick="currentSlide(0)" alt="The Woods">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="02.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cinque Terre">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="03.jpg" style="width:100%" onclick="currentSlide(2)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="04.jpg" style="width:100%" onclick="currentSlide(3)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="05.jpg" style="width:100%" onclick="currentSlide(4)" alt="Nature and sunrise">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="06.jpg" style="width:100%" onclick="currentSlide(5)" alt="Snowy Mountains">
+        </div>
+    
+   
+    <script src="slider_01.js"></script>
+</body>
+</html>

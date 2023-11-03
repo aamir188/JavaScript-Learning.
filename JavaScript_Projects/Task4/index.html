@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inout Add</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div clas="form">
+            <label for="Name">Name:</label>
+            <input type="text" name="name" placeholder="Name Here" id="name">
+        </div>
+
+        <div class="form">
+            <label for="Name">Degree:</label>
+            <input type="text" name="degree" placeholder="Degree Title Here" id="degree">
+        </div>
+
+        <div class="form">
+            <label for="Name">CGPA:</label>
+            <input type="text" name="cgpa" placeholder="CGPA Here" id="cgpa">
+        </div>
+    </div>
+    <div id="output">
+        <!-- This is where the new HTML will be displayed -->
+        <div class="btn" id="btn"></div>
+    </div>
+        <button  onclick="addNew()" class="button">Add New</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

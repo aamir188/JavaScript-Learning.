@@ -1,0 +1,110 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.main{   
+    width: 100%; 
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    /* overflow: hidden; */
+    box-shadow: 0px, 0px, 3px gray;
+}
+#slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+.column img{
+  padding: 15px 10px;
+}
+/* .nav{
+    text-align: center;
+    margin-top: 15px;
+}
+.nav button{
+    font-size: 25px;
+    padding: 5px;
+} */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  background-color: #9E9AA3;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  } */
+  /* #caption {
+    color: white;
+    position: absolute;
+    left: 44%;
+    text-align: center;
+    top: 95%;
+
+} */
+#caption {
+  position: absolute;
+  width: 35%;
+  height: 14%;
+  top: 80%;
+  left: 20px;
+  text-align: center;
+  background-color: #212123;
+  opacity: 0.9;
+  color: white;
+  border-top-right-radius: 30px;
+  border-left: 10px solid #9E9AA3;
+  font-size: 2em;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
